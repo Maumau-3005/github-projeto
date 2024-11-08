@@ -1,33 +1,49 @@
-{% load django_browser_reload %}
-{% load static %}
-
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="GitHub Codespaces ♥️ Django">
-    <meta name="author" content="GitHub Codespaces">
-    <meta name="generator" content="GitHub Codespaces">
-    <meta name="theme-color" content="#000000">
-    <title>{% block title %}{{ title }} | GitHub Codespaces ♥️ Django{% endblock %}</title>
-    
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line UP PUC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
-            </p>
-        </header>
-    </div>
-</body>
+    <!-- Cabeçalho com Logo e Menu -->
+    <header>
+        <div class="header-content">
+            <img src="logo_puc.png" alt="Logo PUC-Rio" class="logo"> <!-- Insira o caminho da imagem do logo -->
+            <h1>Line U Puc</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Line U Puc - Início</a></li>
+                <li><a href="#calendario">Calendário</a></li>
+                <li><a href="#inscreva-se">Inscreva-se agora</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#iniciar-sessao">Iniciar Sessão</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Imagem de Destaque -->
+    <section class="hero">
+        <img src="auditorio.jpg" alt="Auditório PUC-Rio com público" class="hero-image"> <!-- Insira o caminho da imagem do auditório -->
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="welcome">
+            <h2>Bem-vindo ao <strong>Line UP PUC</strong></h2>
+            <p>Conectando os talentos artísticos da PUC-Rio com o público universitário!
+                O <strong>Line UP PUC</strong> é uma plataforma dedicada a promover <strong>artistas independentes</strong>
+                e a divulgar eventos culturais no campus. Aqui, você encontra um espaço para
+                apresentações ao vivo e pode explorar a rica diversidade artística da nossa
+                universidade.</p>
+            <p>Se você é um <strong>artista</strong> em busca de uma oportunidade para se apresentar, inscreva-se
+                agora e faça parte da nossa programação de eventos. Se faz parte do público, confira
+                os próximos shows e performances e venha prestigiar os talentos que fazem parte
+                da PUC-Rio.</p>
+        </section>
+    </main>
+</body>
 </html>
