@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Line UP PUC</title>
-    <link rel="stylesheet" href="styles.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
 <body>
-    <!-- Cabeçalho com Logo e Menu -->
     <header>
         <div class="header-content">
-            <img src="logo_puc.png" alt="Logo PUC-Rio" class="logo"> <!-- Insira o caminho da imagem do logo -->
-            <h1>Line U Puc</h1>
+            <div class="logo-container">
+                <img src="https://lh5.googleusercontent.com/proxy/zbybYpoSqp_RmJJXjrx52RAh5F5cTifkBsn0Epvu_7a9JmYIggWPgkbhxvlf0DPtWyK5R9GlKU3GIF5QKx-9qQ" alt="Logo PUC-Rio" class="logo">
+            </div>
+            <div class="title-container">
+                <h1>Line U Puc</h1>
+            </div>
         </div>
         <nav>
             <ul>
@@ -25,12 +29,10 @@
         </nav>
     </header>
 
-    <!-- Imagem de Destaque -->
     <section class="hero">
-        <img src="auditorio.jpg" alt="Auditório PUC-Rio com público" class="hero-image"> <!-- Insira o caminho da imagem do auditório -->
+        <img src="https://s2-oglobo.glbimg.com/Ra88ignjbRrkRtcFiAvBOfO_YhY=/0x0:4288x2848/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/3/u/yvzu2BSmCqQDGOf4CQzQ/17-09-27-pilotis-puc-assessoria-2matheus-aguiar.jpg" alt="Auditório PUC-Rio com público" class="hero-image">
     </section>
 
-    <!-- Conteúdo Principal -->
     <main>
         <section class="welcome">
             <h2>Bem-vindo ao <strong>Line UP PUC</strong></h2>
