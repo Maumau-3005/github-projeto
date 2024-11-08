@@ -1,54 +1,49 @@
-{% load django_browser_reload %}
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página Inicial</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
+    <title>Line UP PUC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho com Logo e Menu -->
     <header>
+        <div class="header-content">
+            <img src="logo_puc.png" alt="Logo PUC-Rio" class="logo"> <!-- Insira o caminho da imagem do logo -->
+            <h1>Line U Puc</h1>
+        </div>
         <nav>
-            <h1>Bem-vindo ao Meu Site</h1>
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#inicio">Line U Puc - Início</a></li>
+                <li><a href="#calendario">Calendário</a></li>
+                <li><a href="#inscreva-se">Inscreva-se agora</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#iniciar-sessao">Iniciar Sessão</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
+    <!-- Imagem de Destaque -->
+    <section class="hero">
+        <img src="auditorio.jpg" alt="Auditório PUC-Rio com público" class="hero-image"> <!-- Insira o caminho da imagem do auditório -->
+    </section>
+
+    <!-- Conteúdo Principal -->
     <main>
-        <section id="home">
-            <h2>Início</h2>
-            <p>Esta é a página inicial do meu site. Aqui você encontra informações sobre os serviços que ofereço e como entrar em contato.</p>
-        </section>
-
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Um pouco sobre mim e sobre o propósito deste site.</p>
-        </section>
-
-        <section id="servicos">
-            <h2>Serviços</h2>
-            <p>Descrição dos serviços oferecidos.</p>
+        <section class="welcome">
+            <h2>Bem-vindo ao <strong>Line UP PUC</strong></h2>
+            <p>Conectando os talentos artísticos da PUC-Rio com o público universitário!
+                O <strong>Line UP PUC</strong> é uma plataforma dedicada a promover <strong>artistas independentes</strong>
+                e a divulgar eventos culturais no campus. Aqui, você encontra um espaço para
+                apresentações ao vivo e pode explorar a rica diversidade artística da nossa
+                universidade.</p>
+            <p>Se você é um <strong>artista</strong> em busca de uma oportunidade para se apresentar, inscreva-se
+                agora e faça parte da nossa programação de eventos. Se faz parte do público, confira
+                os próximos shows e performances e venha prestigiar os talentos que fazem parte
+                da PUC-Rio.</p>
         </section>
     </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Email: contato@meusite.com</p>
-            <p>Telefone: (11) 1234-5678</p>
-        </section>
-        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
