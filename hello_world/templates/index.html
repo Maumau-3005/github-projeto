@@ -1,33 +1,54 @@
 {% load django_browser_reload %}
 {% load static %}
 
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="GitHub Codespaces ♥️ Django">
-    <meta name="author" content="GitHub Codespaces">
-    <meta name="generator" content="GitHub Codespaces">
-    <meta name="theme-color" content="#000000">
-    <title>{% block title %}{{ title }} | GitHub Codespaces ♥️ Django{% endblock %}</title>
-    
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Inicial</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
 </head>
-
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
-            </p>
-        </header>
-    </div>
-</body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <h1>Bem-vindo ao Meu Site</h1>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Seção Principal -->
+    <main>
+        <section id="home">
+            <h2>Início</h2>
+            <p>Esta é a página inicial do meu site. Aqui você encontra informações sobre os serviços que ofereço e como entrar em contato.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Um pouco sobre mim e sobre o propósito deste site.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <p>Descrição dos serviços oferecidos.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contato@meusite.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+        </section>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
 </html>
