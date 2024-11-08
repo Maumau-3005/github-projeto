@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sessão</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://lh5.googleusercontent.com/proxy/zbybYpoSqp_RmJJXjrx52RAh5F5cTifkBsn0Epvu_7a9JmYIggWPgkbhxvlf0DPtWyK5R9GlKU3GIF5QKx-9qQ" alt="Logo PUC-Rio" class="logo">
+            </div>
+            <div class="title-container">
+                <h1>Line U Puc</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Line U Puc - Início</a></li>
+                <li><a href="{% url 'calendario' %}">Calendário</a></li>
+                <li><a href="{% url 'inscrever_se' %}">Inscreva-se agora</a></li>
+                <li><a href="{% url 'faq' %}">FAQ</a></li>
+                <li><a href="{% url 'iniciar_sessao' %}">Iniciar Sessão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Iniciar Sessão</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+
+        <p>Não possui uma conta? <a href="{% url 'registrar' %}">Registre-se aqui</a>.</p>
+    </main>
+</body>
+</html>

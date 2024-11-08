@@ -20,14 +20,17 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from hello_world.core import views as core_views
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('', core_views.index, name='index'),
-    path("admin/", admin.site.urls),
+    path('', core_views.home, name='index'),
+    path('calendario/', core_views.calendario, name='calendario'),
     path('faq/', core_views.faq, name='faq'),
-    path("calendario/",core_views.calendario,name='calendario'),
-    path("__reload/", include("django_browser_reload.urls")),
+    path('iniciar_sessao/', auth_views.LoginView.as_view(template_name='registrar.html'), name='iniciar_sessao'),
+    path('inscrever_se/', core_views.inscrever_se, name='inscrever_se'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
 ]
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
