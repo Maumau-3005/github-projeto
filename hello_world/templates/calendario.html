@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}"> <!-- Ajuste o caminho do CSS conforme a estrutura do projeto -->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://lh5.googleusercontent.com/proxy/zbybYpoSqp_RmJJXjrx52RAh5F5cTifkBsn0Epvu_7a9JmYIggWPgkbhxvlf0DPtWyK5R9GlKU3GIF5QKx-9qQ" alt="Logo PUC-Rio" class="logo">
+            </div>
+            <div class="title-container">
+                <h1>Line U Puc</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Line U Puc - Início</a></li>
+                <li><a href="{% url 'calendario' %}">Calendário</a></li>
+                <li><a href="{% url 'inscrever_se' %}">Inscreva-se agora</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
+                <li><a href="{% url 'faq' %}">FAQ</a></li>
+                <li><a href="{% url 'iniciar_sessao' %}">Iniciar Sessão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Calendário</h2>
+        
+        <section>
+            <h3>18 de Setembro | 17h - Show do Luiz Prado</h3>
+            <p>
+                Venha prestigiar o som de Luiz Fernando Prado em um evento exclusivo para os amantes de música!
+                O artista promete agitar o campus com um repertório variado e cheio de energia.
+                Não perca essa oportunidade de curtir um show incrível no coração da PUC-Rio.
+            </p>
+            <p><strong>Local:</strong> Anfiteatro</p>
+        </section>
+
+        <section>
+            <h3>20 de Setembro | 15h - Apresentação Acústica com a Banda Cuica do Sul</h3>
+            <p>
+                Desfrute de uma tarde de boa música com a apresentação acústica da Banda Cuica do Sul. 
+                Com um som intimista e cheio de emoção, a banda traz um repertório especial para todos 
+                os amantes de música ao vivo. Venha relaxar e curtir essa experiência musical no campus!
+            </p>
+            <p><strong>Local:</strong> Anfiteatro</p>
+        </section>
+
+        <a href="index.html" class="btn-voltar">VOLTAR</a>
+    </main>
+</body>
+</html>

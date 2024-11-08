@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://lh5.googleusercontent.com/proxy/zbybYpoSqp_RmJJXjrx52RAh5F5cTifkBsn0Epvu_7a9JmYIggWPgkbhxvlf0DPtWyK5R9GlKU3GIF5QKx-9qQ" alt="Logo PUC-Rio" class="logo">
+            </div>
+            <div class="title-container">
+                <h1>Line U Puc</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Line U Puc - Início</a></li>
+                <li><a href="{% url 'calendario' %}">Calendário</a></li>
+                <li><a href="{% url 'inscrever_se' %}">Inscreva-se agora</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
+                <li><a href="{% url 'faq' %}">FAQ</a></li>
+                <li><a href="{% url 'iniciar_sessao' %}">Iniciar Sessão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>FAQ</h2>
+        <section>
+            <h3>1. O que é o Line U PUC?</h3>
+            <p>O Line U PUC é uma plataforma que conecta artistas independentes da PUC-Rio com o público universitário, facilitando a inscrição para apresentações e a divulgação de eventos no campus.</p>
+    
+            <h3>2. Como posso me inscrever como artista?</h3>
+            <p>Se você é artista ou faz parte de uma banda e deseja se apresentar, basta acessar a página "Inscreva-se agora", preencher o formulário com suas informações e aguardar a validação do CACC. Você será informado por e-mail sobre a confirmação da sua participação.</p>
+    
+            <h3>3. Como o CACC seleciona os artistas para os eventos?</h3>
+            <p>O CACC analisa as inscrições dos artistas considerando critérios como gênero musical, relevância para o evento e disponibilidade. Após a análise, o artista receberá uma notificação confirmando ou não a participação no evento.</p>
+    
+            <h3>4. Como posso saber quais eventos estão programados?</h3>
+            <p>Você pode acessar o calendário de eventos disponível no site. Lá, todos os eventos confirmados, suas datas, horários e locais são atualizados regularmente para que você não perca nada.</p>
+    
+            <h3>5. O Line U PUC é exclusivo para alunos da PUC-Rio?</h3>
+            <p>Sim, o Line U PUC é exclusivo para alunos da PUC-Rio.</p>
+    
+            <h3>6. Como posso cancelar minha inscrição em um evento?</h3>
+            <p>Você pode cancelar sua inscrição enviando um e-mail para a nossa equipe ou acessando sua conta na plataforma. Certifique-se de fazer isso com antecedência para evitar problemas de organização.</p>
+    
+            <h3>7. Quais tipos de eventos o Line U PUC promove?</h3>
+            <p>O Line U PUC promove uma ampla variedade de eventos culturais, incluindo apresentações musicais, peças teatrais, exposições de arte e muito mais.</p>
+    
+            <h3>8. Há custos para participar como artista?</h3>
+            <p>Não, a participação como artista é gratuita. O objetivo do Line U PUC é promover a arte e a cultura dentro do campus sem custos para os participantes.</p>
+    
+            <h3>9. Posso sugerir eventos ou temas específicos?</h3>
+            <p>Sim, você pode sugerir eventos ou temas entrando em contato com a nossa equipe por e-mail ou preenchendo o formulário de sugestões na plataforma.</p>
+    
+            <h3>10. Como posso entrar em contato com a equipe do Line U PUC?</h3>
+            <p>Você pode entrar em contato conosco através da página "Fale Conosco" no site ou enviando um e-mail diretamente para a nossa equipe.</p>
+        </section>
+    </main>
+</body>
+</html>
